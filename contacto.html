@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donsa-Tour viajes</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <img class="mainlogo" src="./images/logo.jpeg" alt="Logo del sitio web">
+        <h1>Donsa-tour</h1>
+        <h5>viajes y turismo</h5>
+    </header>
+    <nav>
+        <ul class="menu">
+            <a href="index.html">
+                <li class="menu-item">Inicio</li>
+            </a>
+            <a href="viajes.html">
+                <li class="menu-item">Viajes</li>
+            </a>
+            <a href="contacto.html">
+                <li class="menu-item">Contacto</li>
+            </a>
+        </ul>
+    </nav>
+    <div class="content">
+        <div class="contact">
+            <h1>Estimado Cliente:</h1>
+            <p>
+                Antes de enviarnos un mail por consultas de viajes, recuerde que nuestra página opera totalmente Online,
+                es decir, que toda la información sobre nuestros tours, fechas de salidas con lugares disponibles,
+                tarifas
+                y formas de pago se encuentran actualizadas.</p>
+
+            <p>Ventajas de operar con nuestro Website en forma Ágil y rápida:</p>
+            <ul>
+                <li>Efectuar su reserva online.</li>
+                <li>Pagar online con tarjeta de crédito o deposito bancario.</li>
+                <li>Seguimiento de su reserva.</li>
+                <li>Emitir su vouchers de viaje.</li>
+            </ul>
+
+            <form>
+                <label for="nombreCompleto">Nombre y Apellido:</label> <input name="fullName" type="text"
+                    placeholder="Juan Perez" />
+                <label for="fechaViaje">Fecha de viaje (desde):</label> <input name="travelDateFrom" type="date" />
+                <label for="fechaViaje">Fecha de viaje (hasta):</label> <input name="travelDateTo" type="date" />
+                <label for="email">Email:</label> <input name="email" type="email" placeholder="juanperez@gmail.com" />
+                <label for="telefono">Teléfono:</label> <input name="phone" type="tel" placeholder="2983998877" />
+                <label for="opt-in">Deseo recibir ofertas en el futuro</label> <input name="opt-in" type="checkbox"
+                    checked />
+                <input class="submitButton" name="submit" type="submit" />
+            </form>
+        </div>
+    </div>
+    <footer>Donsa-tour. Todos los derechos reservados. 2023</footer>
+</body>
+
+</html>
