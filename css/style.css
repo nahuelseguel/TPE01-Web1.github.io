@@ -14,7 +14,7 @@ header {
 }
 
 .mainlogo {
-    width: 10%;
+    width: auto;
     height: 10%;
     position: absolute;
     left: 15px;
