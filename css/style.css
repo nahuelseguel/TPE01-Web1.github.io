@@ -19,6 +19,7 @@ header {
     position: absolute;
     left: 15px;
     border-radius: 50px;
+    margin-top: 5px;
 }
 
 .menu {
@@ -32,6 +33,7 @@ header {
     border-radius: 30px;
     height: 30px;
     align-items: center;
+    min-width: 300px;
 }
 
 .menu-item {
@@ -80,6 +82,7 @@ footer {
     display: flex;
     justify-content: center;
     margin-top: 5%;
+    min-width: 300px;
 }
 
 .travelbox {
