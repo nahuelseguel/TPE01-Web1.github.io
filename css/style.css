@@ -182,6 +182,10 @@ input {
     width: 50%;
 }
 
+input:hover{
+background-color:00000020;
+}
+
 .submitButton {
     margin-top: 20px;
     height: 20px;
