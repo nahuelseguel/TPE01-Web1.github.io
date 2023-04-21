@@ -14,8 +14,8 @@ header {
 }
 
 .mainlogo {
-    max-width: 80px;
-    max-height: 80px;
+    width: 10%;
+    height: 10%;
     position: absolute;
     left: 15px;
     border-radius: 50px;
