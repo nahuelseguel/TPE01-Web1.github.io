@@ -21,7 +21,9 @@ header {
     border-radius: 50px;
     margin-top: 5px;
 }
-
+.mainlogo:hover {
+    transform: scale(1.5);
+}
 .menu {
     display: flex;
     list-style: none;
