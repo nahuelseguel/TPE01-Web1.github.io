@@ -18,13 +18,13 @@
     <nav>
         <ul class="menu">
             <a href="index.html">
-                <li class="menu-item">Inicio</li>
+                <li class="menu-item"><span>Inicio</span></li>
             </a>
             <a href="viajes.html">
-                <li class="menu-item">Viajes</li>
+                <li class="menu-item"><span>Viajes</span></li>
             </a>
             <a href="contacto.html">
-                <li class="menu-item">Contacto</li>
+                <li class="menu-item"><span>Contacto</span></li>
             </a>
         </ul>
     </nav>
@@ -45,13 +45,13 @@
                 <li>Emitir su vouchers de viaje.</li>
             </ul>
 
-            <form>
-                <label for="nombreCompleto">Nombre y Apellido:</label> <input name="fullName" type="text"
+            <form autocomplete="off">
+                <label for="nombreCompleto">Nombre y Apellido:</label> <input required  autofill=false name="fullName" type="text"
                     placeholder="Juan Perez" />
-                <label for="fechaViaje">Fecha de viaje (desde):</label> <input name="travelDateFrom" type="date" />
-                <label for="fechaViaje">Fecha de viaje (hasta):</label> <input name="travelDateTo" type="date" />
-                <label for="email">Email:</label> <input name="email" type="email" placeholder="juanperez@gmail.com" />
-                <label for="telefono">Teléfono:</label> <input name="phone" type="tel" placeholder="2983998877" />
+                <label for="fechaViaje">¿En qué mes queres viajar?:</label> <input required name="travelDateFrom" type="month" />
+                <label for="email">Email:</label> <input required name="email" type="email" placeholder="juanperez@gmail.com" />
+                <label for="telefono">Teléfono:</label> <input required name="phone" type="tel" placeholder="2983998877" />
+                <label for="mensaje">Mensaje:</label> <textarea required name="message" type="textarea" placeholder="Tu mensaje aqui...">Me gustaria consultar por un viaje.</textarea>
                 <label for="opt-in">Deseo recibir ofertas en el futuro</label> <input name="opt-in" type="checkbox"
                     checked />
                 <input class="submitButton" name="submit" type="submit" />
