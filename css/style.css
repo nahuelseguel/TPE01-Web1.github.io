@@ -97,6 +97,7 @@ footer {
     margin-top: 5%;
     min-width: 300px;
     flex-wrap: wrap;
+    
 }
 
 .travelbox {
@@ -187,6 +188,7 @@ a {
     box-shadow: -5px 15px 20px 15px #00000050;
     margin-top: -30px;
     font-size: 12px;
+    max-width: 600px;
 }
 
 form {
