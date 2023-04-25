@@ -62,6 +62,7 @@ header {
 .menu-item:hover {
     background-color: #17ceeb;
     border: 5px solid #17ceeb;
+    border-bottom: 3px solid #000;
 }
 
 .menu-item:active {
