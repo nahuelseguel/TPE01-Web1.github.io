@@ -134,7 +134,7 @@ footer {
     height: 100%;
     max-width: auto;
     max-height: 120px;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 
 .box-img:hover {
