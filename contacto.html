@@ -45,20 +45,46 @@
                 <li>Emitir su vouchers de viaje.</li>
             </ul>
 
-            <form autocomplete="off">
-                <label for="nombreCompleto">Nombre y Apellido:</label> <input required  autofill=false name="fullName" type="text"
-                    placeholder="Juan Perez" />
-                <label for="fechaViaje">¿En qué mes queres viajar?:</label> <input required name="travelDateFrom" type="month" />
-                <label for="email">Email:</label> <input required name="email" type="email" placeholder="juanperez@gmail.com" />
-                <label for="telefono">Teléfono:</label> <input required name="phone" type="tel" placeholder="2983998877" />
-                <label for="mensaje">Mensaje:</label> <textarea required name="message" type="textarea" placeholder="Tu mensaje aqui...">Me gustaria consultar por un viaje.</textarea>
-                <label for="opt-in">Deseo recibir ofertas en el futuro</label> <input name="opt-in" type="checkbox"
-                    checked />
-                <input class="submitButton" name="submit" type="submit" />
+            <form id="form">
+                <div class="formRow">
+                    <label for="nombreCompleto">Nombre y Apellido:</label> <input required autofill=false
+                        name="fullName" type="text" placeholder="Juan Perez" />
+                </div>
+                <div class="formRow">
+                    <label for="fechaViaje">¿En qué mes queres viajar?:</label> <input required name="travelDateFrom"
+                        type="month" />
+                </div>
+                <div class="formRow">
+                    <label for="email">Email:</label> <input required name="email" type="email"
+                        placeholder="juanperez@gmail.com" />
+                </div>
+                <div class="formRow">
+                    <label for="telefono">Teléfono:</label> <input required name="phone" type="tel"
+                        placeholder="2983998877" />
+                </div>
+                <div class="formRow">
+                    <label for="mensaje">Mensaje:</label> <textarea required name="message" type="textarea"
+                        placeholder="Tu mensaje aqui...">Me gustaria consultar por un viaje.</textarea>
+                </div>
+                <div class="formRow">
+                    <label for="opt-in">Deseo recibir ofertas en el futuro:</label> <input id="formcheckbox"
+                        name="opt-in" type="checkbox" checked />
+                </div>
+                <div class="formRow">
+                    <label id="captchaLabel">Captcha:<span id="captcha" title="Clic para regenerar."></span></label>
+                    <input id="captchaInput" type="text" id="userInput" placeholder="Completa el captcha"></input>
+                </div>
+                <div class="formRow">
+                    <div id="formButton">
+                        <input id="submitButton" name="submit" type="submit" />
+                    </div>
+                    <label id="label-IsValidForm"></label>
+                </div>
             </form>
+
         </div>
     </div>
+    <script type="text/javascript" src="./js/main.js"></script>
     <footer>Donsa-tour. Todos los derechos reservados. 2023</footer>
 </body>
-
 </html>
