@@ -14,7 +14,7 @@ function generateCaptcha() {
 }
 
 function validateCaptcha(event) {
-    event.preventDefault();
+    event.preventDefault();  // esta linea evita que el navegador (por defecto) intente enviar los datos del formulario al servidor, lo que provoca que la pagina se refresque automaticamente perdiendo asi el valor del label isValid.
     let userInput = document.getElementById("captchaInput");   //Input text donde el usuario ingresa la respuesta
     let userInputValue = userInput.value;  //Lo que ingresó el user
     let isValid = document.getElementById("label-IsValidForm");  //Label donde se muestra el resultado
