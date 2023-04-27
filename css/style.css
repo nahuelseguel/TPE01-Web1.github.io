@@ -120,12 +120,9 @@ footer {
     cursor: pointer;
 }
 
-
-
 .travelbox-header {
     text-align: center;
 }
-
 
 .travelbox-content {
 
@@ -186,7 +183,7 @@ a {
     color: black;
     padding: 10px;
     border: 2px solid #928f8f;
-    box-shadow: 0px 0px 20px 10px #10748340;
+    box-shadow: 0px 0px 20px -5px #107483;
     font-size: 12px;
 }
 
