@@ -14,17 +14,18 @@ function generateCaptcha() {
 }
 
 function validateCaptcha(event) {
+    event.preventDefault();
     let userInput = document.getElementById("captchaInput");   //Input text donde el usuario ingresa la respuesta
     let userInputValue = userInput.value;  //Lo que ingresó el user
     let isValid = document.getElementById("label-IsValidForm");  //Label donde se muestra el resultado
     if (captcha.innerHTML != userInputValue) {
-        event.preventDefault();
+        
         isValid.innerHTML = "🤖Captcha incorrecto🤖. Intentá nuevamente.";
         userInput.value = "";
     }
     else {
         isValid.innerHTML = "Captcha correcto! No sos un robot.";
-        event.preventDefault();
+        
     }
     //lo muestra en consola (opcional, para debug)
     console.log(isValid.innerHTML);
