@@ -1,12 +1,12 @@
 * {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', Verdana, sans-serif;
-    background-color: #FAFAFA;
+    background-color: #EEEEEE;
 }
 
 header {
     display: flex;
     justify-content: center;
-    text-transform: uppercase;  
+    text-transform: uppercase;
 }
 
 body {
@@ -24,8 +24,8 @@ footer {
     margin-top: 20px;
     font-size: 10px;
     border-top: 1px solid #107483;
-    box-shadow: 0px -10px 20px 0px #10748330;
-    background-color: #FAFAFA;
+    box-shadow: 0px -10px 20px 1px #10748330;
+    background-color: #EEEEEE;
 
 }
 
@@ -45,27 +45,29 @@ footer {
 .mainlogo:hover {
     transform: translateY(20px) translateX(20px) scale(1.5);
 }
-@media screen and (max-width: 600px) {
-    .mainlogo {
-        display: none;
-    }
-}
 
+/* Si la resolucion media es de 768 o menos (mobile) */
+
+nav {
+    position: fixed;
+    right: 15px;
+    background-color: transparent;
+}
 
 .menu {
     display: flex;
     list-style: none;
     background-color: #87ceeb;
-    position: absolute;
-    right: 40px;
     margin-top: -10px;
     padding: 0;
     border-radius: 30px;
     height: 30px;
-    align-items: center;
-    min-width: 400px;
     box-shadow: 0px 0px 20px 5px #10748330;
     justify-content: space-between;
+}
+
+.menu-icon {
+    display: none;
 }
 
 .menu-item {
@@ -93,7 +95,7 @@ footer {
     background-color: #17ceeb;
     border: 5px solid #17ceeb;
     color: white;
-  }
+}
 
 .content {
     display: flex;
@@ -109,20 +111,23 @@ footer {
     height: auto;
     width: 200px;
     border-radius: 10px;
-    box-shadow: 0px 0px 20px -5px #107483;
+    box-shadow: 0px 0px 20px 5px #10748350;
     transition: 0.2s;
 
 }
 
 .travelbox:hover {
     transform: scale(1.2);
-    box-shadow: 0px 0px 20px -5px #107483;
+    box-shadow: 0px 0px 20px 0px #107483;
     cursor: pointer;
 }
+
+
 
 .travelbox-header {
     text-align: center;
 }
+
 
 .travelbox-content {
 
@@ -183,7 +188,7 @@ a {
     color: black;
     padding: 10px;
     border: 2px solid #928f8f;
-    box-shadow: 0px 0px 20px -5px #107483;
+    box-shadow: 0px 0px 20px 10px #10748340;
     font-size: 12px;
 }
 
@@ -250,17 +255,18 @@ textarea:hover {
     background-color: #00000010;
 }
 
-#formButton{
-    width:100%;
+#formButton {
+    width: 100%;
     display: flex;
     justify-content: center;
 }
+
 #submitButton {
     margin-top: 30px;
     border-radius: 15px;
     background-color: #87ceeb;
     font-size: 20px;
-    cursor: pointer;   
+    cursor: pointer;
 }
 
 #submitButton:valid {
@@ -285,6 +291,7 @@ textarea:hover {
 #captchaInput:invalid {
     border-color: black;
 }
+
 #captchaInput:valid {
     border-color: green;
 }
@@ -305,9 +312,77 @@ textarea:hover {
     height: 25px;
 }
 
-#label-IsValidForm{
+#label-IsValidForm {
     width: 100%;
     background-color: transparent;
     text-align: center;
     display: block;
 }
+
+.overlay{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000AA;
+    z-index: 9999;
+  }
+  
+
+@media screen and (max-width: 768px) {
+    .menu-icon {
+        display: block;
+        margin: 0px 0px 20px 30px;
+        font-size: 2em;
+        cursor: pointer;
+        background-color: transparent;
+        margin-top: -50px;
+        z-index: 10000;
+        color: #107483;
+    }
+
+    .menu-icon:hover{
+        color: #107483AA;
+    }
+    
+    .mainlogo {
+        display: none;
+    }
+    nav {
+        width: 100%;
+        z-index: 10000;
+        background-color: transparent;
+    }
+    
+    nav .menu .menu-item{
+        display: flex;
+        border-radius: 0;
+        width: 100%;
+        height: 25px;
+        text-align: center;
+    }
+    
+    .menu {
+        background-color: transparent;
+        box-shadow: 0px 0px 0px 0px;
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .menu-item{
+        width: 100%;
+    }
+    .overlay{
+        overflow-y: auto;
+    }
+    body{
+        overflow: hidden;
+    }
+    .show{
+        display: block;
+    }
+}
+    

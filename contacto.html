@@ -10,18 +10,23 @@
 </head>
 
 <body>
+    <div class="overlay"></div>
     <header>
         <img class="mainlogo" src="./images/logo.jpeg" alt="Logo del sitio web">
         <h1>Donsa-tour</h1>
         <h5>viajes y turismo</h5>
     </header>
     <nav>
+        <div class="menu-icon">&#9776;</div>
         <ul class="menu">
             <a href="index.html">
-                <li class="menu-item">Inicio</li>
+                <li class="menu-item"> Inicio</li>
             </a>
             <a href="viajes.html">
                 <li class="menu-item">Viajes</li>
+            </a>
+            <a href="itinerarios.html">
+                <li class="menu-item">Itinerarios</li>
             </a>
             <a href="contacto.html">
                 <li class="menu-item current-page">Contacto</li>
@@ -55,7 +60,7 @@
                         type="month" />
                 </div>
                 <div class="formRow">
-                    <label for="email">Email:</label> <input required name="email" type="email"
+                    <label for="email">Email:</label><input required name="email" type="email"
                         placeholder="juanperez@gmail.com" />
                 </div>
                 <div class="formRow">
@@ -71,7 +76,7 @@
                         name="opt-in" type="checkbox" checked />
                 </div>
                 <div class="formRow">
-                    <label id="captchaLabel">Captcha:<span id="captcha" title="Clic para regenerar."></span></label>
+                    <label id="captchaLabel">Captcha:<span id="captcha" title="Clic para regenerar"></span></label>
                     <input id="captchaInput" type="text" id="userInput" placeholder="Completa el captcha"></input>
                 </div>
                 <div class="formRow">
@@ -84,7 +89,9 @@
 
         </div>
     </div>
+    <script type="text/javascript" src="./js/captcha.js"></script>
     <script type="text/javascript" src="./js/main.js"></script>
     <footer>Donsa-tour. Todos los derechos reservados. 2023</footer>
 </body>
+
 </html>

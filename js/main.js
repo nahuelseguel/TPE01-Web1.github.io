@@ -1,32 +1,10 @@
-"use strict";
+const menuIcon = document.querySelector('.menu-icon');
+const menu = document.querySelector('.menu');
+const overlay = document.querySelector('.overlay');
 
-let captcha = document.getElementById("captcha");  //Span donde se genera el captcha
-let randomCaptcha;
-let submitButton = document.getElementById("submitButton"); //Boton que hace la validacion
-generateCaptcha();
-submitButton.addEventListener("click", validateCaptcha);
-captcha.addEventListener("click", generateCaptcha);
 
-function generateCaptcha() {
-    randomCaptcha = Math.floor(Math.random() * 100000);
-    if (randomCaptcha < 10000) generateCaptcha();
-    captcha.innerHTML = randomCaptcha;
-}
-
-function validateCaptcha(event) {
-    event.preventDefault();  // esta linea evita que el navegador (por defecto) intente enviar los datos del formulario al servidor, lo que provoca que la pagina se refresque automaticamente perdiendo asi el valor del label isValid.
-    let userInput = document.getElementById("captchaInput");   //Input text donde el usuario ingresa la respuesta
-    let userInputValue = userInput.value;  //Lo que ingresó el user
-    let isValid = document.getElementById("label-IsValidForm");  //Label donde se muestra el resultado
-    if (captcha.innerHTML != userInputValue) {
-        
-        isValid.innerHTML = "🤖Captcha incorrecto🤖. Intentá nuevamente.";
-        userInput.value = "";
-    }
-    else {
-        isValid.innerHTML = "Captcha correcto! No sos un robot.";
-        
-    }
-    //lo muestra en consola (opcional, para debug)
-    console.log(isValid.innerHTML);
-}
+menuIcon.addEventListener('click', function () {
+    menu.classList.toggle('show');
+    overlay.classList.toggle('show');
+    document.body.classList.toggle('no-scroll');
+});
