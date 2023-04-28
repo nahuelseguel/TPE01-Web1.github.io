@@ -380,11 +380,11 @@ textarea:hover {
     .overlay{
         overflow-y: auto;
     }
-    body{
-        overflow: hidden;
-    }
     .show{
         display: block;
     }
+    /* body {
+        overflow: hidden;
+    } */
 }
     
