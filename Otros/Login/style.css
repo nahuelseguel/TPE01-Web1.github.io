@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url('img/bg.jpg') no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center ;
+
+}   
+
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    justify-content: space-around;
+    width: 100%;
+    color: white;
+    text-transform: uppercase;
+    user-select: none;
+    margin: 20px;
+    backdrop-filter: blur(15px);
+    border-radius: 5px;
+    height: 70px;
+    align-items:center;
+    z-index: 99;
+
+}
+
+header h1 {
+    margin-left: 10vh;
+    width: auto;
+    font-size: 1.7em;
+    color: black;
+    font-weight: 300;
+}
+
+header nav {
+    align-items: center;
+    margin-right: 10vh;
+    justify-content:end;
+    display: flex;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 0px 10px 0px 10px;
+    color: white;
+    position: relative;
+    margin-left: 40px;
+    border-radius: 5px;
+    height: 35px;
+    align-items:center;
+    display: flex;
+}
+
+nav a::after {
+    height: 3px;
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 100%;
+    background:#FFF;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform 500ms;
+    transform-origin: left;
+}
+nav a:hover::after {
+    transform: scaleX(1);
+}
+nav a:hover {
+    color: black;
+    background-color: #FFFFFF90;
+    transition: 1s;
+    backdrop-filter: blur(15px);
+
+}
+
+nav a:active {
+    color: #00000090;
+    transition: none;
+}
+
+#btn_login{
+    display: flex;
+    border: 2px solid white;
+    height: 35px;
+    width: 100px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items:center;
+}
+
+.form-box{
+    backdrop-filter: blur(10px);
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+ .login input{
+    padding: 20px;
+    margin-bottom: 20px;
+    height: 25px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+    font-size: 1.2em;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid white;
+    outline: none;
+}
+
+#log-in{
+    height: 40px;
+    width: 100%;
+    font-weight: 500;
+    background-color: transparent;
+    color: white;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+#log-in:hover{
+    background-color: #FFFFFF30;
+    transition: 500ms;
+    cursor: pointer;
+}
+
+#register{
+    color: white;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    font-size: 0.8em;
+    border-radius: 5px;
+    padding: 2px 5px 2px 5px;
+}
+
+#register:hover{
+    transition:500ms;
+    background-color: #FFFFFF30;
+    text-decoration: underline;
+    cursor: pointer;
+}
