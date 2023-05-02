@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Pixels&display=swap');
+
 * {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', Verdana, sans-serif;
     /* background-color: #EEEEEE; */
@@ -303,14 +305,17 @@ form .formRow #captchaInput:valid {
     border-color: green;
 }
 
+#captchaLabel {
+font-size: 0.5rem;
+}
+
 form .formRow #captcha {
-    font-weight: bold;
     color: red;
-    font-size: 2em;
+    font-size: 2rem;
     font-style: italic;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Arial';
+    font-family: "Rubik Pixels";
     cursor: pointer;
-    padding-left: 20px;
+    padding-left: 0px;
 
 }
 
