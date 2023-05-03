@@ -3,6 +3,7 @@
 * {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', Verdana, sans-serif;
     /* background-color: #EEEEEE; */
+    user-select: none;
 }
 
 header {
