@@ -15,6 +15,7 @@ header {
 body {
     background: url('../images/bg5.jpg');
     background-size:cover;
+    background-repeat: no-repeat;
     overflow: auto;
     margin: 0 0 40px 0;
 }
