@@ -246,11 +246,6 @@ form .formRow input {
     outline: none;
 }
 
-form .formRow input:hover {
-    background-color: #00000010;
-    
-}
-
 form .formRow textarea {
     height: 5em;
     padding: 5px 10px;
@@ -266,12 +261,9 @@ form .formRow textarea {
     outline: none;
 }
 
-form .formRow textarea:valid {
-    color: black;
-}
-
-form .formRow textarea:hover {
+form .formRow input:hover, input:focus, textarea:hover, textarea:focus {
     background-color: #00000010;
+    
 }
 
 form .formRow #formButton {
