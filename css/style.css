@@ -261,7 +261,7 @@ form .formRow textarea {
     outline: none;
 }
 
-form .formRow input:hover, input:focus, textarea:hover, textarea:focus {
+form .formRow input:hover, input:focus, textarea:hover, textarea:focus, textarea:active, textarea:active {
     background-color: #00000010;
     
 }
