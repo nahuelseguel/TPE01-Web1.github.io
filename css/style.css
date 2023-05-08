@@ -243,6 +243,7 @@ form .formRow input {
     border:0;
     border-radius:0;
     border-bottom: 2px solid black;
+    outline: none;
 }
 
 form .formRow input:hover {
@@ -262,6 +263,7 @@ form .formRow textarea {
     background-color: transparent;
     resize: none;
     margin-bottom: 15px;
+    outline: none;
 }
 
 form .formRow textarea:valid {
