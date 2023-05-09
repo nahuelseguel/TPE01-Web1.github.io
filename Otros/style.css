@@ -1,0 +1,43 @@
+*{
+    margin:15px;
+    padding: 15px;
+    font-family: Verdana, "Tahoma";
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 100%;
+    text-align: center;
+}
+
+input, button{
+outline: none;
+border-radius: 15px;
+border: 3px solid;
+color: #6c6c6c;
+border-top-color: red;
+border-right-color: Green;
+border-bottom-color: yellowgreen;
+border-left-color: blue;
+font-size: 1.2em;
+}
+
+input:focus, input:hover{
+    background-color: #00000010;
+    color: black;
+}
+button:hover{
+    color: red;
+    background-color: #00000020;
+}
+
+#captcha{
+    color: red;
+    background-color: black;
+    border-radius: 15px;
+    width: 150px;
+    font-size: 1.2em;
+}
