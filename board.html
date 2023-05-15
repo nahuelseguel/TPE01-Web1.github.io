@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styleNahue.css">
+</head>
+<body>
+    <header>
+        <img class="mainlogo" src="./images/logo.jpeg" alt="Logo del sitio web">
+        <h1>Donsa-tour</h1>
+    </header>
+    <div class="content">
+        <div class="motivo-viaje">    
+            <span id="seleccionar">Seleccione su motivo de viaje
+            <select id="select">
+                <option value="Vacaciones">Vacaciones</option>
+                <option value="Turismo">Turismo</option>
+                <option value="Trabajo">Trabajo</option>
+                <option value="Negocios">Negocios</option>
+            </select>
+            </span>
+            <div id="formRow">
+                <label for="fechaViaje">¿En qué mes queres viajar?:</label> <input id="mes" required name="travelDateFrom"
+                    type="month" />
+                    <button id="boton-mes">Aceptar</button>
+            </div>
+        </div>
+        <div class="tabla">
+            <table id="tabla1">
+                <thead>
+                    <tr>
+                        <td>Mes de viaje</td>
+                        <td>Dia</td>
+                        <td>Hora de salida</td>
+                        <td>Hora de llegada</td>
+                        <td>Escala</td>
+                    </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td id="mes-viaje"></td>
+                </tr>
+                </tbody>
+                <tr class="oculto">
+                    <td></td>
+                    <td>1/.../2023</td>
+                    <td>23:55</td>
+                    <td>17:55</td>
+                    <td>Brasil</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>2/.../2023</td>
+                    <td>21:35</td>
+                    <td>22:05 </td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>3/.../2023</td>
+                    <td>23:55</td>
+                    <td>17:55</td>
+                    <td>Peru</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>4/.../2023</td>
+                    <td>21:35</td>
+                    <td>22:05 </td>
+                    <td>Colombia</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>8/.../2023</td>
+                    <td>23:55</td>
+                    <td>17:55</td>
+                    <td>Peru</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>9/.../2023</td>
+                    <td>21:35</td>
+                    <td>22:05 </td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>10/.../2023</td>
+                    <td>23:55</td>
+                    <td>17:55</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>11/.../2023</td>
+                    <td>21:35</td>
+                    <td>22:05 </td>
+                    <td>Brasil</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>12/.../2023</td>
+                    <td>23:55</td>
+                    <td>17:55</td>
+                    <td>Colombia</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>14/.../2023</td>
+                    <td>21:35</td>
+                    <td>22:05 </td>
+                    <td>Brasil</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>15/.../2023</td>
+                    <td>23:55</td>
+                    <td>17:55</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>16/.../2023</td>
+                    <td>21:35</td>
+                    <td>22:05 </td>
+                    <td>Peru</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>17/.../2023</td>
+                    <td>23:55</td>
+                    <td>17:55</td>
+                    <td>Brasil</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>18/.../2023</td>
+                    <td>21:35</td>
+                    <td>22:05 </td>
+                    <td>Brasil</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>22/.../2023</td>
+                    <td>23:55</td>
+                    <td>17:55</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>23/.../2023</td>
+                    <td>21:35</td>
+                    <td>22:05 </td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>24/.../2023</td>
+                    <td>23:55</td>
+                    <td>17:55</td>
+                    <td>Peru</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>28/.../2023</td>
+                    <td>23:55</td>
+                    <td>17:55</td>
+                    <td>Colombia</td>
+                </tr>
+            
+            </div>
+        </table>
+    </div>
+    <footer>Donsa-tour. Todos los derechos reservados. 2023</footer>
+    <script  type="text/javascript" src="./js/board.js"></script>
+</body>
+</html>
