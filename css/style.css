@@ -196,6 +196,7 @@ a {
 
 .contact {
     width: 60%;
+    height: auto;
     min-width: 400px;
     border-radius: 15px;
     color: black;
