@@ -146,6 +146,7 @@ function limpiarCamposDOM() {
     cantidad.value = "";
     jubilado.checked = false;
     discapacidad.checked = false;
+    seguro.value="Salud";
 }
 
 function inicializarJSON() {
