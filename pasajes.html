@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donsa-Tour viajes</title>
+    <link rel="stylesheet" href="css/mobilefirst.css">
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <header class="header-main">
+        <img class="mainlogo" src="images/logo.jpeg" alt="Logo del sitio web">
+        <h1>Donsa-tour</h1>
+        <h5>viajes y turismo</h5>
+    </header>
+    <nav>
+        <div class="menu-icon">&#9776;</div>
+        <ul class="menu">
+            <a href="index.html">
+                <li class="menu-item "> Inicio</li>
+            </a>
+            <a href="pasajes.html">
+                <li class="menu-item current-page">Pasajes</li>
+            </a>
+            <a href="contacto.html">
+                <li class="menu-item">Contacto</li>
+            </a>
+        </ul>
+    </nav>
+    <section id="section-pasajes">
+        <form id="form-pasajes" action="#">
+            <label>Edad</label>
+            <input id="edad" type="number" placeholder="Edad" min="1" max="99">
+            <label>Cantidad</label>
+            <input id="cantidad" type="number" placeholder="Cantidad" min="1" max="4">
+            <label>¿Es jubilado?</label>
+            <input id="jubilado" type="checkbox">
+            <label>¿Posee discapacidad?</label>
+            <input id="discapacidad" type="checkbox">
+            <label>Tipo de seguro</label>
+            <select id="seguro">
+                <option value="Salud">Salud</option>
+                <option value="Salud y Equipaje">Salud y Equipaje</option>
+                <option value="Completo">Completo</option>
+            </select>
+        </form>
+        <article id="pasajes-btn">
+            <button class="formButton" id="btn_cart">Añadir al carrito</button>
+            <button id="btn_clean">Limpiar carrito</button>
+        </article>
+        <article>
+            <table id="tabloide">
+            </table>
+        </article>
+    </section>
+    <footer class="footer-main">Donsa-tour. Todos los derechos reservados. 2023</footer>
+    <script src="./js/cart.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
