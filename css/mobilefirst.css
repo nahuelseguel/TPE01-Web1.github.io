@@ -432,9 +432,20 @@ nav .menu .menu-item {
 }
 
 #btn_clean, #btn_cart{
-    margin: 5px 0 5px 20px;
+    margin: 0px 0 10px 20px;
+    margin-top: 30px;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    background-color: #87ceeb;
+    font-size: 20px;
+    cursor: pointer;
+    font-size: small;
 }
 
+#btn_clean:hover, #btn_cart:hover{
+    
+    background-color: #17ceeb;
+}
 #tabloide{
     backdrop-filter: blur(20px);
     width: 100%;
