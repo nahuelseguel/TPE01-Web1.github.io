@@ -15,7 +15,7 @@
 
 body {
     background: url('../images/bg.webp');
-    background-size:auto;
+    background-size: auto;
     background-repeat: repeat;
     overflow: auto;
     margin: 0 0 40px 0;
@@ -55,7 +55,7 @@ body {
     font-size: 14px;
     min-width: 300px;
     max-width: 350px;
-    
+
 
 }
 
@@ -319,19 +319,18 @@ form .formRow #label-IsValidForm {
 
 .menu-icon {
     display: block;
+    align-items: end;
     margin: 0px 0px 20px 30px;
     font-size: 2em;
     cursor: pointer;
     background-color: transparent;
-    margin-top: -50px;
+    margin-top: -40px;
     z-index: 10;
     color: #107483;
     width: 40px;
     text-align: center;
-}
-
-.menu-icon:hover {
-    color: #107483AA;
+    position: absolute;
+    right: 10px;
 }
 
 .mainlogo {
@@ -383,8 +382,8 @@ nav .menu .menu-item {
     display: flex;
     justify-content: center;
 }
-    
-.menu-item:hover, .current-page {
+
+.current-page {
     background-color: #17ceeb;
     border: 5px solid #17ceeb;
     color: white;
@@ -396,7 +395,7 @@ nav .menu .menu-item {
     color: white;
 }
 
-#form-pasajes{
+#form-pasajes {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -410,14 +409,15 @@ nav .menu .menu-item {
     min-width: 350px;
 }
 
-#pasajes-btn{
+#pasajes-btn {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
 }
 
-#btn_clean, #btn_cart{
+#btn_clean,
+#btn_cart {
     margin: 0px 0 10px 20px;
     margin-top: 30px;
     border: 2px solid transparent;
@@ -425,37 +425,52 @@ nav .menu .menu-item {
     background-color: #87ceeb;
     font-size: 20px;
     cursor: pointer;
-    font-size: small;
+    font-size: medium;
 }
 
-#btn_clean:hover, #btn_cart:hover{
-    
-    background-color: #17ceeb;
-}
-#tabloide{
+#tabloide {
     backdrop-filter: blur(20px);
     width: 100%;
     border-collapse: collapse; /* Saca la separación entre celdas */
+    text-align: center;
 }
 
-#tabloide tbody tr:nth-child(-n+3) { /* Marca las primeras tres filas */
+#tabloide tbody tr:nth-child(-n+3) {  /* Marca las primeras tres filas */
     background-color: rgba(0, 0, 0, .3);
-    color: #17ceeb;
 }
 
-#tabloide thead{
+#tabloide thead {
     background-color: #17ceeb;
     text-align: center;
 }
 
-#tabloide td{
+#tabloide td {
     padding-left: 5px;
 }
 
-.fila-destacada{ /* La usamos para destacar filas de la tabla - Seguro Completo */
+.fila-destacada {  /* La usamos para destacar filas de la tabla - Seguro Completo */
     background-color: rgba(0, 0, 0, .15);
-    color: #107483;
+    color: #17ceeb;
     font-weight: 900;
+}
+
+.pasaje-label{
+    font-size: medium;
+}
+.pasaje-input{
+    border-radius: 5px;
+    padding: 5px;
+    height: 1em;
+    border: 1px solid black;
+}
+
+#seguro{
+    height: 2em;
+}
+
+#jubilado,#discapacidad{
+    height: 20px;
+    padding: 0;
 }
 
 
@@ -518,28 +533,41 @@ nav .menu .menu-item {
         background-color: #000000AA;
 
     }
-    
-    .travelbox:hover {
-    transform: scale(1.2);
-    box-shadow: 0px 0px 20px 0px #107483;
-    cursor: pointer;
-}
-    .travelbox-footer:hover {
-    color: red;
-    font-weight: bold;
-}
 
-   .box-img:hover {
-    transition: 0.2s;
-    transform: scale(1.3);
-}
+    .travelbox:hover {
+        transform: scale(1.2);
+        box-shadow: 0px 0px 20px 0px #107483;
+        cursor: pointer;
+    }
+
+    .travelbox-footer:hover {
+        color: red;
+        font-weight: bold;
+    }
+
+    .box-img:hover {
+        transition: 0.2s;
+        transform: scale(1.3);
+    }
+
     .contact {
         width: 40vw;
     }
-    
+
     #form-contacto {
         width: 50vw;
         margin-left: 20px;
     }
 
+    .menu-item:hover {
+        background-color: #17ceeb;
+        border: 5px solid #17ceeb;
+        color: white;
+    }
+
+    #btn_clean:hover,
+    #btn_cart:hover {
+
+        background-color: #17ceeb;
+    }
 }
